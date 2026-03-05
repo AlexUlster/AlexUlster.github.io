@@ -22,6 +22,8 @@ feature_row:
     excerpt: "Here's a showreel of my work!"
 ---
 
+{% include video id="dQw4w9WgXcQ" provider="youtube" %}
+
 {% include feature_row id="intro" type="center" %}
 
 {% include feature_row %}
