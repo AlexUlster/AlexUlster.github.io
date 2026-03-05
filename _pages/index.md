@@ -16,7 +16,7 @@ excerpt: ""
 intro: 
   - excerpt: ''
 feature_row:
-  Let's talk about the Rick Roll phenomena...
+  
   {% include video id="dQw4w9WgXcQ" provider="youtube" %}
 ---
 
