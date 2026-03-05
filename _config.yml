@@ -55,6 +55,11 @@ footer: # Site footer
       url: "https://github.com/AlexUlster"
       target: "_blank"
       # url:
+      - label: "LinkedIn" # Twitter link
+      icon: "fa-brands fa-square-linkedin"
+      url: "https://www.linkedin.com/in/alex-dickie-6295343b3/"
+      target: "_blank"
+       # url:
       target: "_blank"
     - label: "GitHub" # GitHub link
       icon: "fab fa-fw fa-github"
