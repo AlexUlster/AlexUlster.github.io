@@ -16,7 +16,6 @@ excerpt: ""
 intro: 
   - excerpt: ''
 feature_row:
-  
   {% include video id="dQw4w9WgXcQ" provider="youtube" %}
 ---
 
