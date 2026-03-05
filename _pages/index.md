@@ -24,9 +24,8 @@ feature_row:
 
 {% include video id="-9lP95Qo-I0" provider="youtube" %}
 
+---
+
 {% include feature_row id="intro" type="center" %}
 
 {% include feature_row %}
-
-
-
