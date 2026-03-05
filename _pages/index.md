@@ -16,10 +16,10 @@ excerpt: ""
 intro: 
   - excerpt: ''
 feature_row:
-  - video_id: "dQw4w9WgXcQ"  # YouTube ID
+  - video_id: "dQw4w9WgXcQ" 
     provider: "youtube"
-    title: "Video Title"
-    excerpt: "Description of your video"
+    title: "Showreel"
+    excerpt: "Here's a showreel of my work!"
 ---
 
 {% include feature_row id="intro" type="center" %}
