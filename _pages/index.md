@@ -12,9 +12,9 @@ header:
       target: "_blank"
 
 
-excerpt: "You can add text here."
+excerpt: ""
 intro: 
-  - excerpt: 'You can also add text like this....'
+  - excerpt: ''
 feature_row:
   - image_path: /assets/images/placeholder.png
     alt: "placeholder image 1"
