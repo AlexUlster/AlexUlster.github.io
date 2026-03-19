@@ -1,4 +1,3 @@
----
 title: "Alex's Portfolio"
 layout: splash
 permalink: /
@@ -14,6 +13,7 @@ feature_row:
   - video_id: "-9lP95Qo-I0" 
     provider: "youtube"
     title: "Showreel"
-    excerpt: "Here's a showreel of my work!"
+    excerpt: "Here's a showreel of my wrk!"
 ---
-{% include feature_row %} {% include video id="-9lP95Qo-I0" provider="youtube" %}
+{% include feature_row %} 
+{% include video id="-9lP95Qo-I0" provider="youtube" %}
