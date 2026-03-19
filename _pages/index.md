@@ -10,7 +10,8 @@ header:
     - label: "Download CV"
       url: "https://drive.google.com/file/d/1ePqrAcar-abcMBgLCd7uo0HUbZDd929t/preview"
       target: "_blank"
-
+excerpt: ""
+intro: 
   - excerpt: ''
 feature_row:
   - video_id: "-9lP95Qo-I0" 
