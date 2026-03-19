@@ -50,7 +50,7 @@ author:
 # Site Footer
 footer: # Site footer
   links: # Footer links
-    - label: "GiHub" # Twitter link
+    - label: "GitHub" # Twitter link
       icon: "fa-brands fa-github"
       url: "https://github.com/AlexUlster"
       target: "_blank"
