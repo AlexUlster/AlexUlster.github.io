@@ -20,6 +20,8 @@ main:
         url: /pages/splash/
   - title: "Components"
     url: /components/
+  - title: "Skills"
+    url: /skills/
  
 
 # Sidebar menu for the Projects page
