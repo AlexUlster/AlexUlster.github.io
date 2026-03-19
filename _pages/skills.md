@@ -1,6 +1,6 @@
 ---
 title: "Skills"
-layout: single
+layout: default
 permalink: /skills/
 ---
 
