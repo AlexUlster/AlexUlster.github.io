@@ -58,7 +58,7 @@ footer: # Site footer
       target: "_blank"
     - label: "LinkedIn" # GitHub link
       icon: "fa-brands fa-linkedin"
-      url: "www.linkedin.com/in/alex-dickie-6295343b3"
+      url: "https://www.linkedin.com/in/alex-dickie-6295343b3/"
       target: "_blank"
     - label: "GitLab" # GitLab link
       icon: "fab fa-fw fa-gitlab"
