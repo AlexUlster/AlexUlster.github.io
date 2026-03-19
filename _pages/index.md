@@ -20,7 +20,7 @@ feature_row:
     provider: "youtube"
     title: "Showreel"
     excerpt: "Here's a showreel of my work!"
----
+
 {% include feature_row %}
 {% include video id="-9lP95Qo-I0" provider="youtube" %}
 
