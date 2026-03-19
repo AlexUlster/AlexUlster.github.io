@@ -14,19 +14,6 @@ skills:
     badges: ["Game Mechanics", "Levels", "UI"]
     text: "Designed mechanics, levels, and player feedback loops."
     level_label: "Beginner"
-
 ---
-
-
 ## 12. Skills - The Skills content is in the `head` of this page. Look at the `skills` include for available keys. Use <a href="https://fontawesome.com/icons" target="_blank" rel="noopener noreferrer">Font Awesome</a> for icons. {#skills}
 {% include skills skills=page.skills %}
-
-## 13. Feature row - An excellent way to showcase projects or other hidden talents that you might have. Look at the `feature_row` include for available keys.  {#feature-row}
-{% include feature_row %}
-
-## 14. Embedded Google Form. If you are going to add a Contact form then we need to adjust some settings in Google. Ask me about this.  {#contact-form}
-{% include google-form
-  title="Contact Me"
-  src="https://forms.gle/XsbApFoRjn7r24jy6"
-  height="800"
-%}
