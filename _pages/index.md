@@ -11,7 +11,7 @@ header:
       url: "https://drive.google.com/file/d/1ePqrAcar-abcMBgLCd7uo0HUbZDd929t/preview"
       target: "_blank"
 
----
+
 excerpt: ""
 intro: 
   - excerpt: ''
@@ -20,8 +20,7 @@ feature_row:
     provider: "youtube"
     title: "Showreel"
     excerpt: "Here's a showreel of my work!"
-
+---
 {% include feature_row %}
 {% include video id="-9lP95Qo-I0" provider="youtube" %}
-
 
