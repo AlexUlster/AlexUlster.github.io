@@ -1,3 +1,4 @@
+---
 title: "Alex's Portfolio"
 layout: splash
 permalink: /
