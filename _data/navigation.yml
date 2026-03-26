@@ -3,6 +3,9 @@ main:
   - title: "Home"
     url: /
     
+  - title: "Skills"
+    url: /skills/
+    
   - title: "Projects"
     url: /projects/
     children:
@@ -10,32 +13,10 @@ main:
         url: /projects/game-jam/
       - title: "Capstone"
         url: /projects/capstone/
-        
-  - title: "Pages"
-    url: /pages/
-    children:
-      - title: "Default Layout"
-        url: /pages/default/
-      - title: "Single Layout"
-        url: /pages/single/
-      - title: "Splash Layout"
-        url: /pages/splash/
     
-  - title: "Skills"
-    url: /skills/
- 
 # Sidebar menu for the Projects page
 projects:
   - title: "Game Jam"
     url: /projects/game-jam/
   - title: "Capstone"
     url: /projects/capstone/
-
-# Sidebar menu for the Pages page
-pages:
-  - title: "Default Layout"
-    url: /pages/default/
-  - title: "Single Layout"
-    url: /pages/single/
-  - title: "Splash Layout"
-    url: /pages/splash/
