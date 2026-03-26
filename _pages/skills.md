@@ -26,7 +26,7 @@ skills:
     Check out the projects page to see some models I created!"
     years: 2
     
-    
 ---
+
 ## Here's a list of skills that I have aquired over the course of my game development journey!
 {% include skills skills=page.skills %}
