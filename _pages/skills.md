@@ -1,5 +1,5 @@
 ---
-title: "_"
+title: ""
 layout: splash
 permalink: /skills/
 header:
