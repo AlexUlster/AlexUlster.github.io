@@ -20,7 +20,7 @@ skills:
     text: "Developed VR games and experiences in my free time."
     years: 2
   - name: "3D Modelling"
-    icon: "fa-solid fa-vr-cardboard"
+    icon: "fa-solid fa-cubes"
     badges: ["Blender", "Maya", "UV Wrapping", "Substance Painter Texturing"]
     text: "Modelled props, objects and levels in Blender and Maya and used Krita and Substance Painter to texture them -
     Check out the projects page to see some models I created!"
