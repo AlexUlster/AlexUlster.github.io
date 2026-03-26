@@ -2,6 +2,7 @@
 main:
   - title: "Home"
     url: /
+    
   - title: "Projects"
     url: /projects/
     children:
@@ -9,6 +10,7 @@ main:
         url: /projects/game-jam/
       - title: "Capstone"
         url: /projects/capstone/
+        
   - title: "Pages"
     url: /pages/
     children:
@@ -18,12 +20,10 @@ main:
         url: /pages/single/
       - title: "Splash Layout"
         url: /pages/splash/
-  - title: "Components"
-    url: /components/
+    
   - title: "Skills"
     url: /skills/
  
-
 # Sidebar menu for the Projects page
 projects:
   - title: "Game Jam"
