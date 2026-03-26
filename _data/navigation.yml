@@ -13,6 +13,9 @@ main:
         url: /projects/game-jam/
       - title: "Capstone"
         url: /projects/capstone/
+
+  - title: "ContactMe"
+    url: /ContactMe/
     
 # Sidebar menu for the Projects page
 projects:
