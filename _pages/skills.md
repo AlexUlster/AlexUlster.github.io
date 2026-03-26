@@ -15,5 +15,5 @@ skills:
     text: "Designed mechanics, levels, and player feedback loops."
     level_label: "Beginner"
 ---
-## 12. Skills - The Skills content is in the `head` of this page. Look at the `skills` include for available keys. Use <a href="https://fontawesome.com/icons" target="_blank" rel="noopener noreferrer">Font Awesome</a> for icons. {#skills}
+## Here's a list of skills that I have aquired over the course of my game development journey!
 {% include skills skills=page.skills %}
