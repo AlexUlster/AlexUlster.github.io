@@ -19,21 +19,13 @@ skills:
     badges: ["Unity's XR Toolkit", "Meta Developer Hub"]
     text: "Developed VR games and experiences in my free time."
     years: 2
-  - name: "VR Development"
+  - name: "3D Modelling"
     icon: "fa-solid fa-vr-cardboard"
-    badges: ["Unity's XR Toolkit", "Meta Developer Hub"]
-    text: "Developed VR games and experiences in my free time."
+    badges: ["Blender", "Maya", "UV Wrapping", "Substance Painter Texturing"]
+    text: "Modelled props, items and levels in Blender and Maya. These were then Unwrapped and textured in Substance Painter!"
+    text: "Check out the projects page to see some models I created!"
     years: 2
-  - name: "VR Development"
-    icon: "fa-solid fa-vr-cardboard"
-    badges: ["Unity's XR Toolkit", "Meta Developer Hub"]
-    text: "Developed VR games and experiences in my free time."
-    years: 2
-  - name: "VR Development"
-    icon: "fa-solid fa-vr-cardboard"
-    badges: ["Unity's XR Toolkit", "Meta Developer Hub"]
-    text: "Developed VR games and experiences in my free time."
-    years: 2
+    
     
 ---
 ## Here's a list of skills that I have aquired over the course of my game development journey!
