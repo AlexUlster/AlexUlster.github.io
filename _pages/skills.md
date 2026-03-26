@@ -1,5 +1,5 @@
 ---
-title: "Skills"
+title: ""
 layout: splash
 permalink: /skills/
 header:
