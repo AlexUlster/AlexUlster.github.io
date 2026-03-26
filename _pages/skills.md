@@ -22,8 +22,8 @@ skills:
   - name: "3D Modelling"
     icon: "fa-solid fa-vr-cardboard"
     badges: ["Blender", "Maya", "UV Wrapping", "Substance Painter Texturing"]
-    text: "Modelled props, items and levels in Blender and Maya. These were then Unwrapped and textured in Substance Painter!"
-    text: "Check out the projects page to see some models I created!"
+    text: "Modelled props, items and levels in Blender and Maya. These were then Unwrapped and textured in Substance Painter!
+    Check out the projects page to see some models I created!"
     years: 2
     
     
