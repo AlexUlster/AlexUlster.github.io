@@ -14,7 +14,7 @@ main:
       - title: "Capstone"
         url: /projects/capstone/
 
-  - title: "ContactMe"
+  - title: "Contact Me"
     url: /ContactMe/
     
 # Sidebar menu for the Projects page
