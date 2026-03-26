@@ -1,6 +1,6 @@
 ---
 title: "Skills"
-layout: default
+layout: splash
 permalink: /skills/
  
 skills:
