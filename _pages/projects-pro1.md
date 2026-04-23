@@ -15,7 +15,7 @@ Welcome to project one!
   <img src="/assets/images/Placeholder.jpg" alt="Banner" style="width: 100%; height: auto; aspect-ratio: 4/1.5;">
 </div>
 
-<div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; transform: scale(1.5); transform-origin: top left; margin-top: 160px;">
+<div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; transform: scale(1.5); transform-origin: top left; margin-top: 130px;">
   <div style="text-align: center;">
     <img src="/assets/images/Placeholder.jpg" alt="Image 1" style="width: 100%; height: auto;">
     <p style="font-size: 14px; font-family: 'Fontss'; margin-top: 10px;">Text for image 1</p>
