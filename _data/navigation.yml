@@ -3,23 +3,27 @@ main:
   - title: "Home"
     url: /
     
-  - title: "Skills"
-    url: /skills/
-    
   - title: "Projects"
     url: /projects/
     children:
-      - title: "Game Jam"
+      - title: "Project 1"
         url: /projects/game-jam/
-      - title: "Capstone"
+      - title: "Project 2"
         url: /projects/capstone/
-
+      - title: "Project 3"
+        url: /projects/capstone/
+        
+  - title: "Skills"
+    url: /skills/
+    
   - title: "Contact Me"
     url: /ContactMe/
     
 # Sidebar menu for the Projects page
 projects:
-  - title: "Game Jam"
-    url: /projects/game-jam/
-  - title: "Capstone"
-    url: /projects/capstone/
+  - title: "Project 1"
+  url: /projects/game-jam/
+  - title: "Project 2"
+  url: /projects/capstone/
+  - title: "Project 3"
+  url: /projects/capstone/
