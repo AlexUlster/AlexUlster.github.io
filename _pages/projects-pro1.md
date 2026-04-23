@@ -12,7 +12,7 @@ sidebar:
 Welcome to project one!
 
 <div style="text-align: center; margin-bottom: 30px; transform: scale(1.5); transform-origin: top left; display: inline-block; width: 100%;">
-  <img src="/assets/images/Placeholder.jpg" alt="Banner" style="width: 100%; height: auto; aspect-ratio: 4/1;">
+  <img src="/assets/images/Placeholder.jpg" alt="Banner" style="width: 100%; height: auto; aspect-ratio: 4/1.5;">
 </div>
 
 <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; transform: scale(1.5); transform-origin: top left; margin-top: 160px;">
