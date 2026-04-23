@@ -1,7 +1,7 @@
 ---
 title: "Project 1"
 layout: single
-permalink: /projects/pro1/
+permalink: /projects/projects-pro1/
 sidebar:
   title: "Projects"
   nav:
