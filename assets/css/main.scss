@@ -10,7 +10,5 @@ search: false
 
 @font-face {
   font-family: 'MyCustomFont';
-  src: url('/assets/fonts/MyCustomFont.woff2') format('woff2'),
-       url('/assets/fonts/MyCustomFont.woff') format('woff'),
-       url('/assets/fonts/MyCustomFont.ttf') format('truetype');
+  src: url('/assets/fonts/MyCustomFont.ttf') format('truetype');
 }
