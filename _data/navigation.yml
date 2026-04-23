@@ -7,9 +7,9 @@ main:
     url: /projects/
     children:
       - title: "Project 1"
-        url: /projects/game-jam/
+        url: /projects/pro1/
       - title: "Project 2"
-        url: /projects/capstone/
+        url: /projects/pro2/
         
   - title: "Skills"
     url: /skills/
@@ -20,7 +20,7 @@ main:
 # Sidebar menu for the Projects page
 projects:
   - title: "Project 1"
-  url: /projects/game-jam/
+  url: /projects/pro1/
   - title: "Project 2"
-  url: /projects/capstone/
+  url: /projects/pro2/
 
