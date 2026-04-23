@@ -12,7 +12,7 @@ sidebar:
 This is a project page that is a child of Projects. Take a look at `projects-game-jam.md` to see how the sidebar key displays the nested navigation.
 
 <div style="text-align: center; margin-bottom: 30px;">
-  <img src="/assets/images/banner.jpg" alt="Banner" style="width: 100%; height: auto; aspect-ratio: 3/1;">
+  <img src="/assets/images/Placeholder.jpg" alt="Banner" style="width: 100%; height: auto; aspect-ratio: 3/1;">
 </div>
 
 <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; transform: scale(1.5); transform-origin: top left;">
