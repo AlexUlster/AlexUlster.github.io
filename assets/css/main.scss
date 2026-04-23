@@ -7,3 +7,10 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('/assets/fonts/MyCustomFont.woff2') format('woff2'),
+       url('/assets/fonts/MyCustomFont.woff') format('woff'),
+       url('/assets/fonts/MyCustomFont.ttf') format('truetype');
+}
