@@ -11,6 +11,10 @@ sidebar:
 
 This is a project page that is a child of Projects. Take a look at `projects-game-jam.md` to see how the sidebar key displays the nested navigation.
 
+<div style="text-align: center; margin-bottom: 30px;">
+  <img src="/assets/images/Placeholder.jpg" alt="Banner" style="width: 100%; height: auto;">
+</div>
+
 <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; transform: scale(1.5); transform-origin: top left;">
   <div style="text-align: center;">
     <img src="/assets/images/Placeholder.jpg" alt="Image 1" style="width: 100%; height: auto;">
@@ -18,10 +22,10 @@ This is a project page that is a child of Projects. Take a look at `projects-gam
   </div>
   <div style="text-align: center;">
     <img src="/assets/images/Placeholder.jpg" alt="Image 2" style="width: 100%; height: auto;">
-    <p style="font-size: 14px; font-family: 'MyCustomFont'; margin-top: 10px;">Text for image 1</p>
+    <p style="font-size: 14px; font-family: 'MyCustomFont'; margin-top: 10px;">Text for image 2</p>
   </div>
   <div style="text-align: center;">
     <img src="/assets/images/Placeholder.jpg" alt="Image 3" style="width: 100%; height: auto;">
-    <p style="font-size: 14px; font-family: 'MyCustomFont'; margin-top: 10px;">Text for image 1</p>
+    <p style="font-size: 14px; font-family: 'MyCustomFont'; margin-top: 10px;">Text for image 3</p>
   </div>
 </div>
