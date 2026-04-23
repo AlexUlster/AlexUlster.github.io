@@ -13,15 +13,15 @@ This is a project page that is a child of Projects. Take a look at `projects-gam
 
 <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px;">
   <div style="text-align: center;">
-    <img src="/assets/images/Placeholder.jpg" alt="Image 1" style="width: 133%; height: auto;">
+    <img src="/assets/images/Placeholder.jpg" alt="Image 1" style="width: 500%; height: 500%;">
     <p>Text for image 1</p>
   </div>
   <div style="text-align: center;">
-    <img src="/assets/images/Placeholder.jpg" alt="Image 2" style="width: 133%; height: auto;">
+    <img src="/assets/images/Placeholder.jpg" alt="Image 2" style="width: 500%; height: 500%;">
     <p>Text for image 2</p>
   </div>
   <div style="text-align: center;">
-    <img src="/assets/images/Placeholder.jpg" alt="Image 3" style="width: 133%; height: auto;">
+    <img src="/assets/images/Placeholder.jpg" alt="Image 3" style="width: 500%; height: 500%;">
     <p>Text for image 3</p>
   </div>
 </div>
