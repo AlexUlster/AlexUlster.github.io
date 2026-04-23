@@ -9,7 +9,7 @@ sidebar:
 
 ---
 
-This is a project page that is a child of Projects. Take a look at `projects-game-jam.md` to see how the sidebar key displays the nested navigation.
+Welcome to project one!
 
 <div style="text-align: center; margin-bottom: 30px; transform: scale(1.5); transform-origin: top left; display: inline-block; width: 100%;">
   <img src="/assets/images/Placeholder.jpg" alt="Banner" style="width: 100%; height: auto; aspect-ratio: 4/2;">
