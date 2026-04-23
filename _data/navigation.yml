@@ -20,7 +20,7 @@ main:
 # Sidebar menu for the Projects page
 projects:
   - title: "Project 1"
-  url: /projects/pro1/
+  url: /projects/projects-pro1/
   - title: "Project 2"
-  url: /projects/pro2/
+  url: /projects/projects-pro2/
 
