@@ -16,7 +16,8 @@ permalink: /projects/
     color: white;
     text-align: center;
     overflow: hidden;
-    margin: -2rem -2rem 3rem -2rem;
+    margin: 0 -2rem 3rem -2rem;
+    padding-top: 3rem;
   }
 
   .projects-hero::before {
@@ -149,6 +150,7 @@ permalink: /projects/
     opacity: 0;
     transition: opacity 0.3s ease;
     z-index: 10;
+    cursor: pointer;
   }
 
   .project-card:hover .project-overlay {
@@ -242,7 +244,8 @@ permalink: /projects/
     }
 
     .projects-hero {
-      margin: -1rem -1rem 2rem -1rem;
+      margin: 0 -1rem 2rem -1rem;
+      padding-top: 2rem;
     }
   }
 </style>
@@ -256,9 +259,17 @@ permalink: /projects/
 
 <div class="projects-container">
   <!-- Project 1 -->
-  <div class="project-card">
+  <div class="project-card" data-project-link="/projects/projects-pro1/">
     <div class="project-image-container">
-      <img src="/assets/images/Placeholder.jpg" alt="Project 1">
+      <div class="project-collage">
+        <img src="/assets/images/Placeholder.jpg" alt="Project 1 Image 1" class="collage-image">
+        <img src="/assets/images/Placeholder.jpg" alt="Project 1 Image 2" class="collage-image">
+        <img src="/assets/images/Placeholder.jpg" alt="Project 1 Image 3" class="collage-image">
+        <!-- Duplicated for seamless loop -->
+        <img src="/assets/images/Placeholder.jpg" alt="Project 1 Image 1" class="collage-image">
+        <img src="/assets/images/Placeholder.jpg" alt="Project 1 Image 2" class="collage-image">
+        <img src="/assets/images/Placeholder.jpg" alt="Project 1 Image 3" class="collage-image">
+      </div>
       <div class="project-overlay">
         <div class="overlay-text">Click to explore →</div>
       </div>
@@ -275,7 +286,7 @@ permalink: /projects/
   </div>
 
   <!-- Project 2 -->
-  <div class="project-card">
+  <div class="project-card" data-project-link="/projects/projects-pro2/">
     <div class="project-image-container">
       <div class="project-collage">
         <img src="/assets/images/Placeholder.jpg" alt="Project 2 Image 1" class="collage-image">
@@ -297,14 +308,22 @@ permalink: /projects/
         <span class="project-tag">Development</span>
         <span class="project-tag">C#</span>
       </div>
-      <a href="#" class="project-link">View Project</a>
+      <a href="/projects/projects-pro2/" class="project-link">View Project</a>
     </div>
   </div>
 
   <!-- Project 3 -->
-  <div class="project-card">
+  <div class="project-card" data-project-link="/projects/projects-pro3/">
     <div class="project-image-container">
-      <img src="/assets/images/Placeholder.jpg" alt="Project 3">
+      <div class="project-collage">
+        <img src="/assets/images/Placeholder.jpg" alt="Project 3 Image 1" class="collage-image">
+        <img src="/assets/images/Placeholder.jpg" alt="Project 3 Image 2" class="collage-image">
+        <img src="/assets/images/Placeholder.jpg" alt="Project 3 Image 3" class="collage-image">
+        <!-- Duplicated for seamless loop -->
+        <img src="/assets/images/Placeholder.jpg" alt="Project 3 Image 1" class="collage-image">
+        <img src="/assets/images/Placeholder.jpg" alt="Project 3 Image 2" class="collage-image">
+        <img src="/assets/images/Placeholder.jpg" alt="Project 3 Image 3" class="collage-image">
+      </div>
       <div class="project-overlay">
         <div class="overlay-text">Click to explore →</div>
       </div>
@@ -316,7 +335,7 @@ permalink: /projects/
         <span class="project-tag">Narrative Design</span>
         <span class="project-tag">Unreal</span>
       </div>
-      <a href="#" class="project-link">View Project</a>
+      <a href="/projects/projects-pro3/" class="project-link">View Project</a>
     </div>
   </div>
 </div>
@@ -339,5 +358,15 @@ permalink: /projects/
 
   document.querySelectorAll('.project-card').forEach(card => {
     observer.observe(card);
+  });
+
+  // Make overlay clickable to navigate
+  document.querySelectorAll('.project-overlay').forEach(overlay => {
+    overlay.addEventListener('click', function() {
+      const projectLink = this.closest('.project-card').getAttribute('data-project-link');
+      if (projectLink) {
+        window.location.href = projectLink;
+      }
+    });
   });
 </script>
