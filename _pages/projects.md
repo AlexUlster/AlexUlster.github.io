@@ -1,11 +1,7 @@
 ---
 title: "Projects"
-layout: single
+layout: default
 permalink: /projects/
-sidebar:
-  title: "Projects"
-  nav:
-    - projects
 ---
 
 <style>
@@ -16,7 +12,7 @@ sidebar:
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #f7b147 0%, #f79e47 100%);
     color: white;
     text-align: center;
     overflow: hidden;
@@ -67,6 +63,10 @@ sidebar:
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 2rem;
     margin: 3rem 0;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1rem;
   }
 
   .project-card {
@@ -93,9 +93,38 @@ sidebar:
     position: relative;
     overflow: hidden;
     height: 250px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #f7b147 0%, #f79e47 100%);
   }
 
+  /* Scrolling Collage */
+  .project-collage {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    animation: scrollCollage 15s linear infinite;
+  }
+
+  .project-collage:hover {
+    animation-play-state: paused;
+  }
+
+  @keyframes scrollCollage {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .collage-image {
+    width: 150px;
+    height: 250px;
+    flex-shrink: 0;
+    object-fit: cover;
+  }
+
+  /* Fallback for single image */
   .project-card img {
     width: 100%;
     height: 100%;
@@ -113,12 +142,13 @@ sidebar:
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(102, 126, 234, 0.9);
+    background: rgba(247, 177, 71, 0.9);
     display: flex;
     align-items: center;
     justify-content: center;
     opacity: 0;
     transition: opacity 0.3s ease;
+    z-index: 10;
   }
 
   .project-card:hover .project-overlay {
@@ -159,7 +189,7 @@ sidebar:
 
   .project-tag {
     display: inline-block;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #f7b147 0%, #f79e47 100%);
     color: white;
     padding: 0.3rem 0.8rem;
     border-radius: 20px;
@@ -169,7 +199,7 @@ sidebar:
 
   .project-link {
     display: inline-block;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #f7b147 0%, #f79e47 100%);
     color: white;
     padding: 0.6rem 1.2rem;
     border-radius: 6px;
@@ -182,25 +212,7 @@ sidebar:
 
   .project-link:hover {
     transform: translateX(5px);
-    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
-  }
-
-  /* Scroll Indicator */
-  .scroll-indicator {
-    text-align: center;
-    margin: 2rem 0;
-    color: #999;
-    font-size: 0.9rem;
-  }
-
-  .scroll-arrow {
-    display: inline-block;
-    animation: bounce 2s infinite;
-  }
-
-  @keyframes bounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
+    box-shadow: 0 4px 12px rgba(247, 177, 71, 0.4);
   }
 
   @keyframes fadeInUp {
@@ -227,6 +239,10 @@ sidebar:
     .projects-container {
       grid-template-columns: 1fr;
       gap: 1.5rem;
+    }
+
+    .projects-hero {
+      margin: -1rem -1rem 2rem -1rem;
     }
   }
 </style>
@@ -261,7 +277,15 @@ sidebar:
   <!-- Project 2 -->
   <div class="project-card">
     <div class="project-image-container">
-      <img src="/assets/images/Placeholder.jpg" alt="Project 2">
+      <div class="project-collage">
+        <img src="/assets/images/Placeholder.jpg" alt="Project 2 Image 1" class="collage-image">
+        <img src="/assets/images/Placeholder.jpg" alt="Project 2 Image 2" class="collage-image">
+        <img src="/assets/images/Placeholder.jpg" alt="Project 2 Image 3" class="collage-image">
+        <!-- Duplicated for seamless loop -->
+        <img src="/assets/images/Placeholder.jpg" alt="Project 2 Image 1" class="collage-image">
+        <img src="/assets/images/Placeholder.jpg" alt="Project 2 Image 2" class="collage-image">
+        <img src="/assets/images/Placeholder.jpg" alt="Project 2 Image 3" class="collage-image">
+      </div>
       <div class="project-overlay">
         <div class="overlay-text">Click to explore →</div>
       </div>
@@ -297,10 +321,6 @@ sidebar:
   </div>
 </div>
 
-<div class="scroll-indicator">
-  <div class="scroll-arrow">↓ Scroll to see more ↓</div>
-</div>
-
 <script>
   // Scroll reveal animation
   const observerOptions = {
@@ -319,19 +339,5 @@ sidebar:
 
   document.querySelectorAll('.project-card').forEach(card => {
     observer.observe(card);
-  });
-
-  // Smooth scroll
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-      const target = document.querySelector(this.getAttribute('href'));
-      if (target) {
-        target.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
-        });
-      }
-    });
   });
 </script>
