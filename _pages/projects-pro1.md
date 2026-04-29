@@ -138,8 +138,6 @@ sidebar:
 
 <div class="project-scale">
 
-  <h1 class="project-title">Project 1</h1>
-
   <div class="project-video-scale">
     <div class="video-container">
       <iframe 
