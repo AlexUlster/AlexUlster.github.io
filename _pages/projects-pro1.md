@@ -10,7 +10,7 @@ sidebar:
 
 <style>
   .project-scale {
-    width: 170%;
+    width: 150%;
   }
 
   .project-title {
