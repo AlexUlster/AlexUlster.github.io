@@ -1,0 +1,22 @@
+<div class="info-card-container">
+  {% for card in include.cards %}
+  <div class="info-card">
+    <div class="info-image-container">
+      <img src="{{ card.image }}" alt="{{ card.title }}">
+    </div>
+
+    <div class="info-content">
+      <h3 class="info-title">{{ card.title }}</h3>
+      <p class="info-description">{{ card.text }}</p>
+
+      {% if card.tags %}
+      <div class="info-tags">
+        {% for tag in card.tags %}
+        <span class="info-tag">{{ tag }}</span>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </div>
+  </div>
+  {% endfor %}
+</div>
