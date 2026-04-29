@@ -253,7 +253,6 @@ permalink: /projects/
 <div class="projects-hero">
   <div class="projects-hero-content">
     <h1>My Projects</h1>
-    <p>Exploring game design and development through creative projects</p>
   </div>
 </div>
 
