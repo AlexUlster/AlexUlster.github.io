@@ -16,4 +16,4 @@ header:
 
 Here’s a showreel of my work!
 
-{% include video.html id="oYdRzQwxtAc" %}
+{% include video id="oYdRzQwxtAc" %}
