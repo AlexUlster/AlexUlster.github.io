@@ -1,92 +1,23 @@
 ---
 title: "Project 1"
-layout: default
+layout: single
 permalink: /projects/projects-pro1/
+sidebar:
+  title: "Projects"
+  nav:
+    - projects
 ---
 
 <style>
   .project-page {
-    max-width: 1100px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 1rem;
   }
 
-  .back-button {
-    display: inline-block;
-    margin: 1rem 0 2rem 0;
-    background: linear-gradient(135deg, #f9b248 0%, #f79e47 100%);
-    color: white;
-    padding: 0.7rem 1.3rem;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 700;
-    transition: all 0.3s ease;
-  }
-
-  .back-button:hover {
-    transform: translateX(-5px);
-    box-shadow: 0 4px 12px rgba(249, 178, 72, 0.4);
-  }
-
-  .project-hero {
-    position: relative;
-    min-height: 380px;
-    border-radius: 18px;
-    overflow: hidden;
-    background: linear-gradient(135deg, #f9b248 0%, #f79e47 100%);
-    color: white;
-    display: flex;
-    align-items: flex-end;
-    padding: 2.5rem;
+  .project-section {
     margin-bottom: 3rem;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
-  }
-
-  .project-hero::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background:
-      linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.05)),
-      url("/assets/images/Placeholder.jpg");
-    background-size: cover;
-    background-position: center;
-    opacity: 0.9;
-  }
-
-  .project-hero-content {
-    position: relative;
-    z-index: 2;
-    max-width: 700px;
-  }
-
-  .project-hero h1 {
-    font-size: 3.2rem;
-    margin-bottom: 0.7rem;
-    text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
-  }
-
-  .project-hero p {
-    font-size: 1.15rem;
-    line-height: 1.6;
-    opacity: 0.95;
-  }
-
-  .project-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.6rem;
-    margin-top: 1.2rem;
-  }
-
-  .project-tag {
-    background: rgba(255,255,255,0.2);
-    color: white;
-    padding: 0.4rem 0.9rem;
-    border-radius: 20px;
-    font-size: 0.85rem;
-    font-weight: 700;
-    backdrop-filter: blur(4px);
+    animation: fadeInUp 0.7s ease-out;
   }
 
   .section-title {
@@ -95,23 +26,29 @@ permalink: /projects/projects-pro1/
     margin-bottom: 1rem;
   }
 
-  .project-section {
-    margin-bottom: 3.5rem;
-    animation: fadeInUp 0.7s ease-out;
+  .video-container {
+    background: white;
+    border-radius: 16px;
+    padding: 1rem;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    border-top: 6px solid #f9b248;
   }
 
-  .overview-grid {
-    display: grid;
-    grid-template-columns: 1.2fr 0.8fr;
-    gap: 2rem;
-    align-items: start;
+  .video-container iframe,
+  .video-container video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: none;
+    border-radius: 10px;
+    display: block;
   }
 
   .info-card {
     background: white;
-    border-radius: 14px;
-    padding: 1.7rem;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-radius: 16px;
+    padding: 1.8rem;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+    border-left: 6px solid #f9b248;
   }
 
   .info-card p {
@@ -120,29 +57,36 @@ permalink: /projects/projects-pro1/
     margin-bottom: 1rem;
   }
 
-  .quick-info {
-    background: linear-gradient(135deg, #f9b248 0%, #f79e47 100%);
-    color: white;
-    border-radius: 14px;
-    padding: 1.7rem;
-    box-shadow: 0 4px 12px rgba(249,178,72,0.3);
+  .details-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
   }
 
-  .quick-info h3 {
-    margin-bottom: 1rem;
-    font-size: 1.4rem;
+  .detail-card {
+    background: white;
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+    border-top: 5px solid #f9b248;
   }
 
-  .quick-info p {
-    margin: 0.6rem 0;
-    line-height: 1.5;
+  .detail-card h3 {
+    color: #333;
+    margin-bottom: 0.7rem;
+    font-size: 1.35rem;
+  }
+
+  .detail-card p {
+    color: #666;
+    line-height: 1.7;
   }
 
   .scrolling-gallery {
     overflow: hidden;
-    border-radius: 14px;
+    border-radius: 16px;
     background: linear-gradient(135deg, #f9b248 0%, #f79e47 100%);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
   }
 
   .gallery-track {
@@ -170,100 +114,46 @@ permalink: /projects/projects-pro1/
     }
   }
 
-  .feature-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 1.5rem;
-  }
-
-  .feature-card {
-    background: white;
-    border-radius: 14px;
-    padding: 1.5rem;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    border-top: 5px solid #f9b248;
-    transition: all 0.3s ease;
-  }
-
-  .feature-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 22px rgba(0,0,0,0.14);
-  }
-
-  .feature-card h3 {
-    color: #333;
-    margin-bottom: 0.7rem;
-    font-size: 1.25rem;
-  }
-
-  .feature-card p {
-    color: #666;
-    line-height: 1.6;
-    font-size: 0.95rem;
-  }
-
-  .showcase-row {
+  .large-image-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     align-items: center;
-    margin-bottom: 2rem;
   }
 
-  .showcase-row:nth-child(even) .showcase-image {
-    order: 2;
-  }
-
-  .showcase-image img {
+  .large-image-section img {
     width: 100%;
-    border-radius: 14px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.14);
   }
 
-  .showcase-text h3 {
+  .large-image-text h3 {
     color: #333;
     font-size: 1.5rem;
     margin-bottom: 0.8rem;
   }
 
-  .showcase-text p {
+  .large-image-text p {
     color: #666;
     line-height: 1.7;
   }
 
-  .video-container {
-    background: white;
-    border-radius: 14px;
-    padding: 1rem;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
-  }
-
-  .video-container iframe,
-  .video-container video {
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    border: none;
-    border-radius: 10px;
-    display: block;
-  }
-
-  .final-card {
+  .highlight-box {
     background: linear-gradient(135deg, #f9b248 0%, #f79e47 100%);
     color: white;
     border-radius: 16px;
     padding: 2rem;
-    text-align: center;
     box-shadow: 0 8px 24px rgba(249,178,72,0.35);
   }
 
-  .final-card h2 {
+  .highlight-box h2 {
     margin-bottom: 1rem;
+    color: white;
   }
 
-  .final-card p {
-    max-width: 700px;
-    margin: 0 auto;
+  .highlight-box p {
     line-height: 1.7;
+    margin-bottom: 1rem;
   }
 
   @keyframes fadeInUp {
@@ -278,22 +168,9 @@ permalink: /projects/projects-pro1/
   }
 
   @media (max-width: 768px) {
-    .project-hero {
-      min-height: 300px;
-      padding: 1.5rem;
-    }
-
-    .project-hero h1 {
-      font-size: 2.2rem;
-    }
-
-    .overview-grid,
-    .showcase-row {
+    .details-grid,
+    .large-image-section {
       grid-template-columns: 1fr;
-    }
-
-    .showcase-row:nth-child(even) .showcase-image {
-      order: 0;
     }
 
     .gallery-track img {
@@ -305,47 +182,41 @@ permalink: /projects/projects-pro1/
 
 <div class="project-page">
 
-  <a href="/projects/" class="back-button">← Back to Projects</a>
+  <section class="project-section">
+    <h1 class="section-title">Project 1</h1>
 
-  <div class="project-hero">
-    <div class="project-hero-content">
-      <h1>Project 1</h1>
-      <p>
-        A short introduction to the project goes here. Explain what the project is,
-        what you made, and why it is interesting.
-      </p>
+    <div class="video-container">
+      <!-- YouTube embed version -->
+      <iframe 
+        src="https://www.youtube.com/embed/YOUR_VIDEO_ID_HERE"
+        title="Project 1 Video Demo"
+        allowfullscreen>
+      </iframe>
 
-      <div class="project-tags">
-        <span class="project-tag">Game Design</span>
-        <span class="project-tag">Unity</span>
-        <span class="project-tag">C#</span>
-        <span class="project-tag">Level Design</span>
-      </div>
+      <!-- 
+      If you want to use a local video instead, delete the iframe above and use this:
+
+      <video controls>
+        <source src="/assets/videos/project1-demo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      -->
     </div>
-  </div>
+  </section>
 
   <section class="project-section">
-    <div class="overview-grid">
-      <div class="info-card">
-        <h2 class="section-title">Project Overview</h2>
-        <p>
-          This section should explain the main idea of your project. Talk about the goal,
-          the type of game or experience you created, and what the player does.
-        </p>
-        <p>
-          You can also mention your role in the project, such as programming, art,
-          design, animation, UI, sound, or level design.
-        </p>
-      </div>
+    <div class="info-card">
+      <h2 class="section-title">Project Overview</h2>
 
-      <div class="quick-info">
-        <h3>Quick Info</h3>
-        <p><strong>Engine:</strong> Unity</p>
-        <p><strong>Language:</strong> C#</p>
-        <p><strong>Genre:</strong> Action / Adventure</p>
-        <p><strong>Platform:</strong> PC</p>
-        <p><strong>Status:</strong> In Development</p>
-      </div>
+      <p>
+        This section should introduce the project and explain what it is. Talk about
+        the main idea, the genre, and what the player or user is expected to do.
+      </p>
+
+      <p>
+        You can also mention your role in the project, what tools you used, and the
+        main systems or features you personally worked on.
+      </p>
     </div>
   </section>
 
@@ -368,105 +239,54 @@ permalink: /projects/projects-pro1/
   </section>
 
   <section class="project-section">
-    <h2 class="section-title">Key Features</h2>
-
-    <div class="feature-grid">
-      <div class="feature-card">
-        <h3>Core Gameplay</h3>
+    <div class="details-grid">
+      <div class="detail-card">
+        <h3>Development Process</h3>
         <p>
-          Explain the main gameplay system here. For example, movement, combat,
-          puzzle solving, exploration, or progression.
+          Use this section to explain how the project was made. You could talk about
+          early planning, prototypes, design changes, and how the project improved
+          over time.
         </p>
       </div>
 
-      <div class="feature-card">
-        <h3>Visual Style</h3>
+      <div class="detail-card">
+        <h3>My Role</h3>
         <p>
-          Describe the look of the project. Mention the art direction, UI style,
-          animation style, or atmosphere.
-        </p>
-      </div>
-
-      <div class="feature-card">
-        <h3>Technical Work</h3>
-        <p>
-          Talk about the systems you built, such as enemy AI, scene transitions,
-          player controls, UI, saving, or camera work.
-        </p>
-      </div>
-
-      <div class="feature-card">
-        <h3>What I Learned</h3>
-        <p>
-          Explain what skills you improved while making the project and what
-          challenges you solved.
+          Explain what parts of the project you created. This could include coding,
+          design, artwork, animation, UI, sound, testing, or documentation.
         </p>
       </div>
     </div>
   </section>
 
   <section class="project-section">
-    <h2 class="section-title">Project Showcase</h2>
+    <div class="large-image-section">
+      <img src="/assets/images/Placeholder.jpg" alt="Project screenshot">
 
-    <div class="showcase-row">
-      <div class="showcase-image">
-        <img src="/assets/images/Placeholder.jpg" alt="Gameplay screenshot">
-      </div>
-
-      <div class="showcase-text">
-        <h3>Gameplay and Mechanics</h3>
+      <div class="large-image-text">
+        <h3>Gameplay / Main System</h3>
         <p>
-          Use this space to explain one important part of your project. This could be
-          the player controller, combat system, enemy behaviour, level layout, or the
-          main gameplay loop.
-        </p>
-      </div>
-    </div>
-
-    <div class="showcase-row">
-      <div class="showcase-image">
-        <img src="/assets/images/Placeholder.jpg" alt="Development screenshot">
-      </div>
-
-      <div class="showcase-text">
-        <h3>Design Process</h3>
-        <p>
-          Explain how the project developed over time. You can talk about planning,
-          prototyping, testing, feedback, and improvements you made.
+          This is a good place to explain one of the most important parts of the
+          project. For example, you could describe the main gameplay loop, combat
+          system, level design, interaction system, or another major feature.
         </p>
       </div>
     </div>
   </section>
 
   <section class="project-section">
-    <h2 class="section-title">Video Demo</h2>
+    <div class="highlight-box">
+      <h2>Reflection</h2>
 
-    <div class="video-container">
-      <!-- YouTube embed version -->
-      <iframe 
-        src="https://www.youtube.com/embed/YOUR_VIDEO_ID_HERE"
-        title="Project 1 Video Demo"
-        allowfullscreen>
-      </iframe>
-
-      <!-- 
-      If you want to use a local video instead, delete the iframe above and use this:
-
-      <video controls>
-        <source src="/assets/videos/project1-demo.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      -->
-    </div>
-  </section>
-
-  <section class="project-section">
-    <div class="final-card">
-      <h2>Final Thoughts</h2>
       <p>
-        End the page with a short reflection. Mention what you are proud of,
-        what you would improve in the future, and what this project shows about
-        your skills.
+        Use this section to talk about what you learned from the project, what
+        challenges you faced, and what you would improve if you continued working
+        on it.
+      </p>
+
+      <p>
+        This is also a good place to explain why the project is important in your
+        portfolio and what skills it demonstrates.
       </p>
     </div>
   </section>
