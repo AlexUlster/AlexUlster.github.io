@@ -17,7 +17,7 @@ permalink: /projects/
     text-align: center;
     overflow: hidden;
     margin: 0 -2rem 3rem -2rem;
-    padding-top: 3rem;
+    padding-top: 0rem;
   }
 
   .projects-hero::before {
