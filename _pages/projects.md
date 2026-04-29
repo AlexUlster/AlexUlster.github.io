@@ -35,11 +35,15 @@ cards:
 
 <div class="project-scale">
 
-## Project Breakdown
+Project 1: Pinata Puncher!
 
 <div style="height: 20px;"></div>
 
-{% include video id="oYdRzQwxtAc" %}
+Pinata puncher is a fast paced, 3D, arcade style game where the objective is to punch as many pinatas as you can in one minute and compete with your friends to get the highest score! This was made during the first semester at university.
+
+<div style="height: 20px;"></div>
+
+{% include video id="vPuZRjlojW0" %}
 
 {% include project-cards.html cards=page.cards %}
 
