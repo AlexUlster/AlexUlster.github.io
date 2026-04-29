@@ -7,11 +7,11 @@ main:
     url: /projects/
     children:
       - title: "Project 1"
-        url: /projects/pro1/
+        url: /projects/projects-pro1/
       - title: "Project 2"
-        url: /projects/pro2/
+        url: /projects/projects-pro2/
       - title: "Project 3"
-        url: /projects/pro3/
+        url: /projects/projects-pro3/
         
   - title: "Skills"
     url: /skills/
@@ -26,5 +26,4 @@ projects:
   - title: "Project 2"
     url: /projects/projects-pro2/
   - title: "Project 3"
-    url: /projects/projects-pro3/     
-
+    url: /projects/projects-pro3/
