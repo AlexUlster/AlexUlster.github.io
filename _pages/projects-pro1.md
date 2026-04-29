@@ -20,3 +20,25 @@ cards:
     image: /assets/images/Placeholder.jpg
     text: "Break down an important system, such as combat, enemy AI, UI, mechanics, or level design."
 ---
+
+<style>
+  .project-scale {
+    width: 150%;
+  }
+
+  @media (max-width: 768px) {
+    .project-scale {
+      width: 100%;
+    }
+  }
+</style>
+
+<div class="project-scale">
+
+## Project Breakdown
+
+{% include video.html id="YOUR_VIDEO_ID_HERE" %}
+
+{% include project-cards.html cards=page.cards %}
+
+</div>
