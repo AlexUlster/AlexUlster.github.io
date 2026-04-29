@@ -22,8 +22,8 @@ sidebar:
   .project-video-scale {
     transform: scale(1.82);
     transform-origin: top left;
-    width: 54.95%; /* 100 / 1.82 */
-    margin-bottom: 260px; /* pushes content down so it doesn't overlap */
+    width: 54.95%;
+    margin-bottom: 260px;
   }
 
   .video-container iframe {
@@ -34,20 +34,16 @@ sidebar:
   }
 
   .section {
-    margin-bottom: 3rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .section h2 {
+    margin-bottom: 0.6rem;
   }
 
   .section p {
     color: #666;
     line-height: 1.7;
-  }
-
-  .orange-line {
-    width: 60px;
-    height: 4px;
-    background: #f9b248;
-    border-radius: 999px;
-    margin-bottom: 0.8rem;
   }
 
   .overview {
@@ -76,29 +72,6 @@ sidebar:
     border-radius: 14px;
   }
 
-  .scrolling-gallery {
-    overflow: hidden;
-    border-radius: 14px;
-    background: #f9b248;
-  }
-
-  .gallery-track {
-    display: flex;
-    animation: scrollGallery 18s linear infinite;
-  }
-
-  .gallery-track img {
-    width: 260px;
-    height: 170px;
-    object-fit: cover;
-    flex-shrink: 0;
-  }
-
-  @keyframes scrollGallery {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
-  }
-
   @media (max-width: 768px) {
     .project-video-scale {
       transform: none;
@@ -118,7 +91,7 @@ sidebar:
 
   <h1 class="project-title">Project 1</h1>
 
-  <!-- SCALED VIDEO ONLY -->
+  <!-- VIDEO -->
   <div class="project-video-scale">
     <div class="video-container">
       <iframe 
@@ -132,7 +105,6 @@ sidebar:
   <!-- OVERVIEW -->
   <div class="section overview">
     <div>
-      <div class="orange-line"></div>
       <h2>Project Overview</h2>
       <p>
         Explain what your project is, what the goal is, and what the player does.
@@ -145,30 +117,9 @@ sidebar:
     <img src="/assets/images/Placeholder.jpg" alt="Overview image">
   </div>
 
-  <!-- GALLERY -->
-  <div class="section">
-    <div class="orange-line"></div>
-    <h2>Image Gallery</h2>
-
-    <div class="scrolling-gallery">
-      <div class="gallery-track">
-        <img src="/assets/images/Placeholder.jpg">
-        <img src="/assets/images/Placeholder.jpg">
-        <img src="/assets/images/Placeholder.jpg">
-        <img src="/assets/images/Placeholder.jpg">
-
-        <img src="/assets/images/Placeholder.jpg">
-        <img src="/assets/images/Placeholder.jpg">
-        <img src="/assets/images/Placeholder.jpg">
-        <img src="/assets/images/Placeholder.jpg">
-      </div>
-    </div>
-  </div>
-
   <!-- TEXT SECTIONS -->
   <div class="section two-col">
     <div>
-      <div class="orange-line"></div>
       <h2>Development</h2>
       <p>
         Talk about how the project was made, problems you solved, and improvements.
@@ -176,7 +127,6 @@ sidebar:
     </div>
 
     <div>
-      <div class="orange-line"></div>
       <h2>My Role</h2>
       <p>
         What you specifically worked on: programming, gameplay, UI, animation, etc.
@@ -189,7 +139,6 @@ sidebar:
     <img src="/assets/images/Placeholder.jpg">
 
     <div>
-      <div class="orange-line"></div>
       <h2>Main System</h2>
       <p>
         Break down your most important system like combat, AI, or mechanics.
