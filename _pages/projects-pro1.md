@@ -10,9 +10,7 @@ sidebar:
 
 <style>
   .project-scale {
-    transform: scale(1.9);
-    transform-origin: top left;
-    width: 80%;
+    width: 100%;
   }
 
   .project-title {
@@ -20,8 +18,12 @@ sidebar:
     margin-bottom: 1.5rem;
   }
 
-  .video-container {
-    margin-bottom: 2.5rem;
+  /* ONLY scale the video */
+  .project-video-scale {
+    transform: scale(1.82);
+    transform-origin: top left;
+    width: 54.95%; /* 100 / 1.82 */
+    margin-bottom: 260px; /* pushes content down so it doesn't overlap */
   }
 
   .video-container iframe {
@@ -33,6 +35,11 @@ sidebar:
 
   .section {
     margin-bottom: 3rem;
+  }
+
+  .section p {
+    color: #666;
+    line-height: 1.7;
   }
 
   .orange-line {
@@ -47,6 +54,7 @@ sidebar:
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+    align-items: center;
   }
 
   .two-col {
@@ -59,6 +67,7 @@ sidebar:
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+    align-items: center;
   }
 
   .project-scale img {
@@ -83,23 +92,18 @@ sidebar:
     height: 170px;
     object-fit: cover;
     flex-shrink: 0;
-    border-radius: 0;
   }
 
   @keyframes scrollGallery {
-    0% {
-      transform: translateX(0);
-    }
-
-    100% {
-      transform: translateX(-50%);
-    }
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
   }
 
   @media (max-width: 768px) {
-    .project-scale {
+    .project-video-scale {
       transform: none;
       width: 100%;
+      margin-bottom: 2rem;
     }
 
     .overview,
@@ -114,20 +118,24 @@ sidebar:
 
   <h1 class="project-title">Project 1</h1>
 
-  <div class="video-container">
-    <iframe 
-      src="https://www.youtube.com/embed/YOUR_VIDEO_ID_HERE"
-      title="Project Video"
-      allowfullscreen>
-    </iframe>
+  <!-- SCALED VIDEO ONLY -->
+  <div class="project-video-scale">
+    <div class="video-container">
+      <iframe 
+        src="https://www.youtube.com/embed/YOUR_VIDEO_ID_HERE"
+        title="Project Video"
+        allowfullscreen>
+      </iframe>
+    </div>
   </div>
 
+  <!-- OVERVIEW -->
   <div class="section overview">
     <div>
       <div class="orange-line"></div>
       <h2>Project Overview</h2>
       <p>
-        Explain what your project is, what the goal is, and what the user/player does.
+        Explain what your project is, what the goal is, and what the player does.
       </p>
       <p>
         Mention your role, tools used, and what makes this project interesting.
@@ -137,6 +145,7 @@ sidebar:
     <img src="/assets/images/Placeholder.jpg" alt="Overview image">
   </div>
 
+  <!-- GALLERY -->
   <div class="section">
     <div class="orange-line"></div>
     <h2>Image Gallery</h2>
@@ -156,6 +165,7 @@ sidebar:
     </div>
   </div>
 
+  <!-- TEXT SECTIONS -->
   <div class="section two-col">
     <div>
       <div class="orange-line"></div>
@@ -174,6 +184,7 @@ sidebar:
     </div>
   </div>
 
+  <!-- FEATURE -->
   <div class="section image-row">
     <img src="/assets/images/Placeholder.jpg">
 
@@ -181,7 +192,7 @@ sidebar:
       <div class="orange-line"></div>
       <h2>Main System</h2>
       <p>
-        Break down your most important system, like combat, AI, or mechanics.
+        Break down your most important system like combat, AI, or mechanics.
       </p>
     </div>
   </div>
