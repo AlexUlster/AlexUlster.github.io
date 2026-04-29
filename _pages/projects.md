@@ -37,6 +37,7 @@ cards:
 
 ## Project Breakdown
 
+<div style="height: 20px;"></div>
 
 {% include video id="oYdRzQwxtAc" %}
 
