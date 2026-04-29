@@ -37,7 +37,7 @@ cards:
 
 ## Project Breakdown
 
-{% include video id="YOUR_VIDEO_ID_HERE" %}
+{% include video id="oYdRzQwxtAc" %}
 
 {% include project-cards.html cards=page.cards %}
 
