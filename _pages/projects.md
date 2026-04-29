@@ -8,7 +8,7 @@ permalink: /projects/
   /* Hero Section */
   .projects-hero {
     position: relative;
-    height: 60vh;
+    height: 30vh;
     display: flex;
     align-items: center;
     justify-content: center;
