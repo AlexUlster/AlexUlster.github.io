@@ -10,7 +10,7 @@ sidebar:
 cards:
   - title: "Overview"
     image: /assets/images/Placeholder.jpg
-    text: "Explain what the project is, the main goal, and what the player or user does."
+    text: "lebrondaddylebrondaddylebrondaddylebrondaddylebrondaddylebrondaddylebrondaddylebrondaddylebrondaddylebrondaddylebrondaddylebrondaddylebrondaddylebrondaddylebrondaddylebrondaddylebrondaddylebrondaddylebrondaddylebrondaddylebrondaddylebrondaddylebrondaddylebrondaddylebrondaddylebrondaddylebrondaddy"
 
   - title: "Development"
     image: /assets/images/Placeholder.jpg
