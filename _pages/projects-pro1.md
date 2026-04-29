@@ -10,7 +10,7 @@ sidebar:
 
 <style>
   .project-scale {
-    transform: scale(1.25);
+    transform: scale(2);
     transform-origin: top left;
     width: 80%;
   }
