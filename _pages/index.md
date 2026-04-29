@@ -17,4 +17,4 @@ feature_row:
     excerpt: "Here's a showreel of my work!"
 ---
 {% include feature_row %} 
-{% include video id="-9lP95Qo-I0" provider="youtube" %}
+{% include video.html id="oYdRzQwxtAc" %}
