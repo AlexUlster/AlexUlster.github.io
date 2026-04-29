@@ -137,6 +137,8 @@ sidebar:
 </style>
 
 <div class="project-scale">
+  
+## Here's a list of skills that I have aquired over the course of my game development journey!
 
   <div class="project-video-scale">
     <div class="video-container">
