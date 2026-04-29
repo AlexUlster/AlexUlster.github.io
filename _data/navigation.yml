@@ -1,17 +1,26 @@
+# main links
 main:
   - title: "Home"
     url: /
-  - title: "About"
-    url: /about/
+    
   - title: "Projects"
     url: /projects/
-  - title: "Contact"
-    url: /contact/
-
+    children:
+      - title: "Project 1"
+        url: /projects/pro1/
+      - title: "Project 2"
+        url: /projects/pro2/
+        
+  - title: "Skills"
+    url: /skills/
+    
+  - title: "Contact Me"
+    url: /ContactMe/
+    
+# Sidebar menu for the Projects page
 projects:
-  - title: "All Projects"
-    url: /projects/
-  - title: "Game Projects"
-    url: /projects/games/
-  - title: "Web Projects"
-    url: /projects/web/
+  - title: "Project 1"
+    url: /projects/projects-pro1/      
+  - title: "Project 2"
+    url: /projects/projects-pro2/     
+
