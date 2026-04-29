@@ -40,7 +40,7 @@ cards:
 
 ## Here's a list of skills that I have acquired over the course of my game development journey!
 
-{% include project-video.html id="YOUR_VIDEO_ID_HERE" %}
+{% include video id="YOUR_VIDEO_ID_HERE" %}
 
 {% include project-cards.html cards=page.cards %}
 
