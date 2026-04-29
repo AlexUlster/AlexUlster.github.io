@@ -9,7 +9,7 @@ sidebar:
 
 cards:
   - title: "Overview"
-    image: /assets/images/Placeholder.jpg
+    image: /assets/images/PP1.png
     text: "lebrondaddylebrondaddylebrondaddylebrondaddylebrondaddylebrondaddylebrondaddylebrondaddylebrondaddylebrondaddylebrondaddylebrondaddylebrondaddylebrondaddylebrondaddylebrondaddylebrondaddylebrondaddylebrondaddylebrondaddylebrondaddylebrondaddylebrondaddylebrondaddylebrondaddylebrondaddylebrondaddy"
 
   - title: "Development"
