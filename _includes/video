@@ -1,9 +1,31 @@
-{% capture video_id %}{{ include.id }}{% endcapture %}
+<style>
+  .project-video-scale {
+    transform: scale(1.82);
+    transform-origin: top left;
+    width: 54.95%;
+    margin-bottom: 260px;
+  }
 
-<div class="responsive-video-container">
+  .project-video-scale iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: none;
+    border-radius: 14px;
+  }
+
+  @media (max-width: 768px) {
+    .project-video-scale {
+      transform: none;
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+  }
+</style>
+
+<div class="project-video-scale">
   <iframe 
-    src="https://www.youtube-nocookie.com/embed/{{ video_id }}"
-    frameborder="0"
+    src="https://www.youtube.com/embed/{{ include.id }}"
+    title="Project Video"
     allowfullscreen>
   </iframe>
 </div>
