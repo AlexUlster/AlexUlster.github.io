@@ -9,7 +9,7 @@ sidebar:
 
 cards:
   - title: "Gameplay"
-    image: /assets/images/PP1.png
+    image: /assets/images/JG1.png
     text: "The main concept of the game is that the player needs to press the correct gamepad button to jump. This gets really challenging becuase the jump blocks are randomised and change on the fly, which puts the player's reaction time and coordination to the test! Additionally there are traps, spikes and pits scattered over the levels to add more challenge."
 
   - title: "Design"
