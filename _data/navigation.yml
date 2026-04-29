@@ -10,6 +10,8 @@ main:
         url: /projects/pro1/
       - title: "Project 2"
         url: /projects/pro2/
+      - title: "Project 3"
+        url: /projects/pro3/
         
   - title: "Skills"
     url: /skills/
