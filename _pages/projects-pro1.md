@@ -1,37 +1,57 @@
 ---
 title: "Project 1"
-layout: single
+layout: default
 permalink: /projects/projects-pro1/
-sidebar:
-  title: "Projects"
-  nav:
-    - projects
 ---
 
 <style>
-  .project-page {
-    max-width: 1000px;
+  .project-layout {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 3rem;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 1rem;
   }
 
-  .project-section {
-    margin-bottom: 3rem;
-    animation: fadeInUp 0.7s ease-out;
+  .project-sidebar {
+    position: sticky;
+    top: 2rem;
+    align-self: start;
   }
 
-  .section-title {
-    font-size: 2rem;
-    color: #333;
+  .project-sidebar h3 {
     margin-bottom: 1rem;
+    color: #333;
+  }
+
+  .project-sidebar a {
+    display: block;
+    color: #555;
+    text-decoration: none;
+    padding: 0.7rem 0;
+    border-bottom: 1px solid #eee;
+    transition: all 0.3s ease;
+  }
+
+  .project-sidebar a:hover {
+    color: #f9b248;
+    transform: translateX(5px);
+  }
+
+  .project-content {
+    width: 100%;
+  }
+
+  .project-title {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 1.5rem;
   }
 
   .video-container {
-    background: white;
-    border-radius: 16px;
-    padding: 1rem;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
-    border-top: 6px solid #f9b248;
+    width: 100%;
+    margin-bottom: 3rem;
   }
 
   .video-container iframe,
@@ -39,54 +59,54 @@ sidebar:
     width: 100%;
     aspect-ratio: 16 / 9;
     border: none;
-    border-radius: 10px;
-    display: block;
-  }
-
-  .info-card {
-    background: white;
     border-radius: 16px;
-    padding: 1.8rem;
-    box-shadow: 0 4px 14px rgba(0,0,0,0.1);
-    border-left: 6px solid #f9b248;
+    display: block;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.14);
   }
 
-  .info-card p {
-    color: #666;
-    line-height: 1.7;
+  .section {
+    margin-bottom: 4rem;
+  }
+
+  .section h2 {
+    font-size: 2rem;
+    color: #333;
     margin-bottom: 1rem;
   }
 
-  .details-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
-  }
-
-  .detail-card {
-    background: white;
-    border-radius: 16px;
-    padding: 1.5rem;
-    box-shadow: 0 4px 14px rgba(0,0,0,0.1);
-    border-top: 5px solid #f9b248;
-  }
-
-  .detail-card h3 {
-    color: #333;
-    margin-bottom: 0.7rem;
-    font-size: 1.35rem;
-  }
-
-  .detail-card p {
+  .section p {
     color: #666;
-    line-height: 1.7;
+    line-height: 1.8;
+    font-size: 1.05rem;
+    max-width: 900px;
+  }
+
+  .overview-split {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 2.5rem;
+    align-items: center;
+  }
+
+  .overview-split img {
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  }
+
+  .orange-line {
+    width: 80px;
+    height: 5px;
+    background: #f9b248;
+    border-radius: 99px;
+    margin-bottom: 1.2rem;
   }
 
   .scrolling-gallery {
     overflow: hidden;
     border-radius: 16px;
-    background: linear-gradient(135deg, #f9b248 0%, #f79e47 100%);
-    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    background: #f9b248;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
   }
 
   .gallery-track {
@@ -99,8 +119,8 @@ sidebar:
   }
 
   .gallery-track img {
-    width: 320px;
-    height: 210px;
+    width: 360px;
+    height: 230px;
     object-fit: cover;
     flex-shrink: 0;
   }
@@ -114,181 +134,176 @@ sidebar:
     }
   }
 
-  .large-image-section {
+  .two-column-text {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    gap: 3rem;
+  }
+
+  .image-text-row {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 2.5rem;
     align-items: center;
   }
 
-  .large-image-section img {
+  .image-text-row img {
     width: 100%;
     border-radius: 16px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.14);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
   }
 
-  .large-image-text h3 {
-    color: #333;
-    font-size: 1.5rem;
-    margin-bottom: 0.8rem;
-  }
-
-  .large-image-text p {
-    color: #666;
-    line-height: 1.7;
-  }
-
-  .highlight-box {
+  .big-orange-section {
     background: linear-gradient(135deg, #f9b248 0%, #f79e47 100%);
-    color: white;
-    border-radius: 16px;
-    padding: 2rem;
-    box-shadow: 0 8px 24px rgba(249,178,72,0.35);
-  }
-
-  .highlight-box h2 {
-    margin-bottom: 1rem;
+    margin: 4rem -2rem 0 -2rem;
+    padding: 3rem 2rem;
+    border-radius: 20px;
     color: white;
   }
 
-  .highlight-box p {
-    line-height: 1.7;
-    margin-bottom: 1rem;
+  .big-orange-section h2 {
+    color: white;
   }
 
-  @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translateY(25px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  .big-orange-section p {
+    color: white;
+    opacity: 0.95;
   }
 
-  @media (max-width: 768px) {
-    .details-grid,
-    .large-image-section {
+  @media (max-width: 900px) {
+    .project-layout {
       grid-template-columns: 1fr;
     }
 
-    .gallery-track img {
-      width: 260px;
-      height: 170px;
+    .project-sidebar {
+      position: static;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .project-sidebar h3 {
+      width: 100%;
+    }
+
+    .overview-split,
+    .two-column-text,
+    .image-text-row {
+      grid-template-columns: 1fr;
+    }
+
+    .project-title {
+      font-size: 2.3rem;
+    }
+
+    .big-orange-section {
+      margin: 3rem 0 0 0;
     }
   }
 </style>
 
-<div class="project-page">
+<div class="project-layout">
 
-  <section class="project-section">
-    <h1 class="section-title">Project 1</h1>
+  <aside class="project-sidebar">
+    <h3>Projects</h3>
+    <a href="/projects/projects-pro1/">Project 1</a>
+    <a href="/projects/projects-pro2/">Project 2</a>
+    <a href="/projects/projects-pro3/">Project 3</a>
+  </aside>
 
-    <div class="video-container">
-      <!-- YouTube embed version -->
+  <main class="project-content">
+
+    <h1 class="project-title">Project 1</h1>
+
+    <section class="video-container">
       <iframe 
         src="https://www.youtube.com/embed/YOUR_VIDEO_ID_HERE"
         title="Project 1 Video Demo"
         allowfullscreen>
       </iframe>
+    </section>
 
-      <!-- 
-      If you want to use a local video instead, delete the iframe above and use this:
-
-      <video controls>
-        <source src="/assets/videos/project1-demo.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      -->
-    </div>
-  </section>
-
-  <section class="project-section">
-    <div class="info-card">
-      <h2 class="section-title">Project Overview</h2>
-
-      <p>
-        This section should introduce the project and explain what it is. Talk about
-        the main idea, the genre, and what the player or user is expected to do.
-      </p>
-
-      <p>
-        You can also mention your role in the project, what tools you used, and the
-        main systems or features you personally worked on.
-      </p>
-    </div>
-  </section>
-
-  <section class="project-section">
-    <h2 class="section-title">Image Gallery</h2>
-
-    <div class="scrolling-gallery">
-      <div class="gallery-track">
-        <img src="/assets/images/Placeholder.jpg" alt="Project screenshot 1">
-        <img src="/assets/images/Placeholder.jpg" alt="Project screenshot 2">
-        <img src="/assets/images/Placeholder.jpg" alt="Project screenshot 3">
-        <img src="/assets/images/Placeholder.jpg" alt="Project screenshot 4">
-
-        <img src="/assets/images/Placeholder.jpg" alt="Project screenshot 1">
-        <img src="/assets/images/Placeholder.jpg" alt="Project screenshot 2">
-        <img src="/assets/images/Placeholder.jpg" alt="Project screenshot 3">
-        <img src="/assets/images/Placeholder.jpg" alt="Project screenshot 4">
-      </div>
-    </div>
-  </section>
-
-  <section class="project-section">
-    <div class="details-grid">
-      <div class="detail-card">
-        <h3>Development Process</h3>
+    <section class="section overview-split">
+      <div>
+        <div class="orange-line"></div>
+        <h2>Project Overview</h2>
         <p>
-          Use this section to explain how the project was made. You could talk about
-          early planning, prototypes, design changes, and how the project improved
-          over time.
+          This section should introduce the project and explain what it is. Talk about
+          the main idea, the genre, and what the player or user is expected to do.
+        </p>
+        <p>
+          You can also mention your role in the project, what tools you used, and the
+          main systems or features you personally worked on.
         </p>
       </div>
 
-      <div class="detail-card">
-        <h3>My Role</h3>
+      <img src="/assets/images/Placeholder.jpg" alt="Project overview image">
+    </section>
+
+    <section class="section">
+      <div class="orange-line"></div>
+      <h2>Image Gallery</h2>
+
+      <div class="scrolling-gallery">
+        <div class="gallery-track">
+          <img src="/assets/images/Placeholder.jpg" alt="Project screenshot 1">
+          <img src="/assets/images/Placeholder.jpg" alt="Project screenshot 2">
+          <img src="/assets/images/Placeholder.jpg" alt="Project screenshot 3">
+          <img src="/assets/images/Placeholder.jpg" alt="Project screenshot 4">
+
+          <img src="/assets/images/Placeholder.jpg" alt="Project screenshot 1">
+          <img src="/assets/images/Placeholder.jpg" alt="Project screenshot 2">
+          <img src="/assets/images/Placeholder.jpg" alt="Project screenshot 3">
+          <img src="/assets/images/Placeholder.jpg" alt="Project screenshot 4">
+        </div>
+      </div>
+    </section>
+
+    <section class="section two-column-text">
+      <div>
+        <div class="orange-line"></div>
+        <h2>Development Process</h2>
+        <p>
+          Use this section to explain how the project was made. You could talk about
+          planning, prototyping, testing, feedback, and the changes you made during
+          development.
+        </p>
+      </div>
+
+      <div>
+        <div class="orange-line"></div>
+        <h2>My Role</h2>
         <p>
           Explain what parts of the project you created. This could include coding,
           design, artwork, animation, UI, sound, testing, or documentation.
         </p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="project-section">
-    <div class="large-image-section">
-      <img src="/assets/images/Placeholder.jpg" alt="Project screenshot">
+    <section class="section image-text-row">
+      <img src="/assets/images/Placeholder.jpg" alt="Gameplay screenshot">
 
-      <div class="large-image-text">
-        <h3>Gameplay / Main System</h3>
+      <div>
+        <div class="orange-line"></div>
+        <h2>Main System</h2>
         <p>
           This is a good place to explain one of the most important parts of the
-          project. For example, you could describe the main gameplay loop, combat
-          system, level design, interaction system, or another major feature.
+          project, such as the gameplay loop, combat system, level design, interaction
+          system, or another major feature.
         </p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="project-section">
-    <div class="highlight-box">
+    <section class="big-orange-section">
+      <div class="orange-line" style="background: white;"></div>
       <h2>Reflection</h2>
-
       <p>
         Use this section to talk about what you learned from the project, what
         challenges you faced, and what you would improve if you continued working
         on it.
       </p>
+    </section>
 
-      <p>
-        This is also a good place to explain why the project is important in your
-        portfolio and what skills it demonstrates.
-      </p>
-    </div>
-  </section>
+  </main>
 
 </div>
