@@ -252,7 +252,7 @@ permalink: /projects/
 
 <div class="projects-hero">
   <div class="projects-hero-content">
-    <h1>My Projects</h1>
+    <h1>MY PROJECTS</h1>
   </div>
 </div>
 
