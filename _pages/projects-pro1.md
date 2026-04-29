@@ -1,45 +1,27 @@
 ---
 title: "Project 1"
-layout: default
+layout: single
 permalink: /projects/projects-pro1/
+sidebar:
+  title: "Projects"
+  nav:
+    - projects
 ---
 
 <style>
-  .project-wrapper {
-    display: flex;
-    gap: 2rem;
-    max-width: 1180px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 1rem;
-    box-sizing: border-box;
-  }
-
-  .project-sidebar {
-    width: 180px;
-    flex-shrink: 0;
-  }
-
-  .project-sidebar a {
-    display: block;
-    padding: 0.7rem 0;
-    color: #555;
-    text-decoration: none;
-    border-bottom: 1px solid #eee;
-  }
-
-  .project-sidebar a:hover {
-    color: #f9b248;
-  }
-
-  .project-content {
-    flex: 1;
-    min-width: 0;
+  .project-scale {
+    transform: scale(1.25);
+    transform-origin: top left;
+    width: 80%;
   }
 
   .project-title {
-    font-size: 2.4rem;
+    font-size: 2rem;
     margin-bottom: 1.5rem;
+  }
+
+  .video-container {
+    margin-bottom: 2.5rem;
   }
 
   .video-container iframe {
@@ -50,12 +32,7 @@ permalink: /projects/projects-pro1/
   }
 
   .section {
-    margin: 3rem 0;
-  }
-
-  .section p {
-    color: #666;
-    line-height: 1.7;
+    margin-bottom: 3rem;
   }
 
   .orange-line {
@@ -66,16 +43,27 @@ permalink: /projects/projects-pro1/
     margin-bottom: 0.8rem;
   }
 
-  .overview,
-  .image-row,
+  .overview {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
   .two-col {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    gap: 20px;
   }
 
-  img {
-    max-width: 100%;
+  .image-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .project-scale img {
+    width: 100%;
+    height: auto;
     border-radius: 14px;
   }
 
@@ -91,119 +79,111 @@ permalink: /projects/projects-pro1/
   }
 
   .gallery-track img {
-    width: 300px;
-    height: 200px;
+    width: 260px;
+    height: 170px;
     object-fit: cover;
     flex-shrink: 0;
+    border-radius: 0;
   }
 
   @keyframes scrollGallery {
+    0% {
+      transform: translateX(0);
+    }
+
     100% {
       transform: translateX(-50%);
     }
   }
 
-  @media (max-width: 800px) {
-    .project-wrapper {
-      flex-direction: column;
-    }
-
-    .project-sidebar {
+  @media (max-width: 768px) {
+    .project-scale {
+      transform: none;
       width: 100%;
     }
 
     .overview,
-    .image-row,
-    .two-col {
+    .two-col,
+    .image-row {
       grid-template-columns: 1fr;
     }
   }
 </style>
 
-<div class="project-wrapper">
+<div class="project-scale">
 
-  <aside class="project-sidebar">
-    <h3>Projects</h3>
-    <a href="/projects/projects-pro1/">Project 1</a>
-    <a href="/projects/projects-pro2/">Project 2</a>
-    <a href="/projects/projects-pro3/">Project 3</a>
-  </aside>
+  <h1 class="project-title">Project 1</h1>
 
-  <main class="project-content">
+  <div class="video-container">
+    <iframe 
+      src="https://www.youtube.com/embed/YOUR_VIDEO_ID_HERE"
+      title="Project Video"
+      allowfullscreen>
+    </iframe>
+  </div>
 
-    <h1 class="project-title">Project 1</h1>
-
-    <div class="video-container">
-      <iframe 
-        src="https://www.youtube.com/embed/YOUR_VIDEO_ID_HERE"
-        title="Project Video"
-        allowfullscreen>
-      </iframe>
-    </div>
-
-    <div class="section overview">
-      <div>
-        <div class="orange-line"></div>
-        <h2>Project Overview</h2>
-        <p>
-          Explain what your project is, what the goal is, and what the user/player does.
-        </p>
-        <p>
-          Mention your role, tools used, and what makes this project interesting.
-        </p>
-      </div>
-
-      <img src="/assets/images/Placeholder.jpg" alt="Overview image">
-    </div>
-
-    <div class="section">
+  <div class="section overview">
+    <div>
       <div class="orange-line"></div>
-      <h2>Image Gallery</h2>
-
-      <div class="scrolling-gallery">
-        <div class="gallery-track">
-          <img src="/assets/images/Placeholder.jpg">
-          <img src="/assets/images/Placeholder.jpg">
-          <img src="/assets/images/Placeholder.jpg">
-          <img src="/assets/images/Placeholder.jpg">
-          <img src="/assets/images/Placeholder.jpg">
-          <img src="/assets/images/Placeholder.jpg">
-          <img src="/assets/images/Placeholder.jpg">
-          <img src="/assets/images/Placeholder.jpg">
-        </div>
-      </div>
+      <h2>Project Overview</h2>
+      <p>
+        Explain what your project is, what the goal is, and what the user/player does.
+      </p>
+      <p>
+        Mention your role, tools used, and what makes this project interesting.
+      </p>
     </div>
 
-    <div class="section two-col">
-      <div>
-        <div class="orange-line"></div>
-        <h2>Development</h2>
-        <p>
-          Talk about how the project was made, problems you solved, and improvements.
-        </p>
-      </div>
+    <img src="/assets/images/Placeholder.jpg" alt="Overview image">
+  </div>
 
-      <div>
-        <div class="orange-line"></div>
-        <h2>My Role</h2>
-        <p>
-          What you specifically worked on: programming, gameplay, UI, animation, etc.
-        </p>
-      </div>
-    </div>
+  <div class="section">
+    <div class="orange-line"></div>
+    <h2>Image Gallery</h2>
 
-    <div class="section image-row">
-      <img src="/assets/images/Placeholder.jpg">
+    <div class="scrolling-gallery">
+      <div class="gallery-track">
+        <img src="/assets/images/Placeholder.jpg">
+        <img src="/assets/images/Placeholder.jpg">
+        <img src="/assets/images/Placeholder.jpg">
+        <img src="/assets/images/Placeholder.jpg">
 
-      <div>
-        <div class="orange-line"></div>
-        <h2>Main System</h2>
-        <p>
-          Break down your most important system, like combat, AI, or mechanics.
-        </p>
+        <img src="/assets/images/Placeholder.jpg">
+        <img src="/assets/images/Placeholder.jpg">
+        <img src="/assets/images/Placeholder.jpg">
+        <img src="/assets/images/Placeholder.jpg">
       </div>
     </div>
+  </div>
 
-  </main>
+  <div class="section two-col">
+    <div>
+      <div class="orange-line"></div>
+      <h2>Development</h2>
+      <p>
+        Talk about how the project was made, problems you solved, and improvements.
+      </p>
+    </div>
+
+    <div>
+      <div class="orange-line"></div>
+      <h2>My Role</h2>
+      <p>
+        What you specifically worked on: programming, gameplay, UI, animation, etc.
+      </p>
+    </div>
+  </div>
+
+  <div class="section image-row">
+    <img src="/assets/images/Placeholder.jpg">
+
+    <div>
+      <div class="orange-line"></div>
+      <h2>Main System</h2>
+      <p>
+        Break down your most important system, like combat, AI, or mechanics.
+      </p>
+    </div>
+  </div>
 
 </div>
