@@ -35,12 +35,11 @@ cards:
 
 <div class="project-scale">
 
-Project 1: Apocalyptic 3D Models
+Project 4: Bean Business
 
 <div style="height: 20px;"></div>
 
-Here are some apocalyptic 3D models I designed and created for an assignment during my first year at the Northern Regional College! These were all modelled in Maya, then textured in Substance Painter.
-The video below was rendered and edited in Blender.
+Bean Business was a small extraction game demo I made at the NRC for an assignment.
 
 <div style="height: 20px;"></div>
 
