@@ -39,7 +39,7 @@ Project 4: Bean Business
 
 <div style="height: 20px;"></div>
 
-Bean Business was a small extraction game demo I made at the NRC for an assignment.
+Bean Business was a small extraction game demo I made at the NRC for an assignment. I made it by myself using tools like Unity, Blender and substance painter.
 
 <div style="height: 20px;"></div>
 
