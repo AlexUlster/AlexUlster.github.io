@@ -39,7 +39,7 @@ Project 2: Jump Game Demo!
 
 <div style="height: 20px;"></div>
 
-Jump Game is a 2D, level based jumping game. It uses gamepad controls to make the player jump depending on the type of jump block the player is attached to. I made this during the first semester at university!
+Jump Game is a 2D, level based jumping game. It uses gamepad controls to make the player jump depending on the type of jump block the player is attached to. I made this during the first semester by myself at university using the Unity game engine!
 
 <div style="height: 20px;"></div>
 
