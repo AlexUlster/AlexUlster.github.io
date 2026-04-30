@@ -1,7 +1,7 @@
 ---
 title: "Project 1"
 layout: single
-permalink: /projects/projects-pro1/
+permalink: /projects/
 sidebar:
   title: "Projects"
   nav:
@@ -39,7 +39,7 @@ Project 1: Pinata Puncher!
 
 <div style="height: 20px;"></div>
 
-Pinata puncher is a fast paced, 3D, arcade style game where the objective is to punch as many pinatas as you can in one minute and compete with your friends to get the highest score! This was made during the first semester at university.
+Pinata puncher is a fast paced, 3D, arcade style game where the objective is to punch as many pinatas as you can in one minute and compete with your friends to get the highest score! This was made during the first semester at university by myself using the UnityEngine and ProBuilder.
 
 <div style="height: 20px;"></div>
 
