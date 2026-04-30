@@ -3,10 +3,9 @@ title: " "
 layout: splash
 permalink: /skills/
 header:
-  title: "<h1 style='font-size: 4rem; font-weight: 800; letter-spacing: 2px;'>SKILLS</h1>"
   overlay_color: "#000"
   overlay_filter: "0.5"
-  overlay_image: assets/images/Placeholder.jpg
+  overlay_image: /assets/images/Placeholder.jpg
  
 skills:
   - name: "Unity"
@@ -27,11 +26,14 @@ skills:
   - name: "3D Modelling"
     icon: "fa-solid fa-cubes"
     badges: ["Blender", "Maya", "UV Wrapping", "Substance Painter Texturing"]
-    text: "Modelled props, objects and levels in Blender and Maya and used Krita and Substance Painter to texture them -
-    Check out the projects page to see some models I created!"
+    text: "Modelled props, objects and levels in Blender and Maya and used Krita and Substance Painter to texture them - Check out the projects page to see some models I created!"
     years: 3
-    
 ---
 
-## Here's a list of skills that I have aquired over the course of my game development journey!
+<div style="display: flex; justify-content: center; margin-top: -260px; margin-bottom: 160px;">
+  <img src="/assets/images/skills.png" style="max-width: 320px; width: 80%; filter: drop-shadow(0 10px 20px rgba(0,0,0,0.5));">
+</div>
+
+## Here's a list of skills that I have acquired over the course of my game development journey!
+
 {% include skills skills=page.skills %}
