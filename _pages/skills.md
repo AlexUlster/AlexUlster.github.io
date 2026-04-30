@@ -7,7 +7,7 @@ header:
   excerpt: " "
   overlay_color: "#000"
   overlay_filter: "0.5"
-  overlay_image: /assets/images/Placeholder.jpg
+  overlay_image: /assets/images/OG1
  
 skills:
   - name: "Unity"
