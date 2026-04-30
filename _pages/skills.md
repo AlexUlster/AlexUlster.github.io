@@ -3,6 +3,7 @@ title: " "
 layout: splash
 permalink: /skills/
 header:
+  title: "<h1 style='font-size: 4rem; font-weight: 800; letter-spacing: 2px;'>SKILLS</h1>"
   overlay_color: "#000"
   overlay_filter: "0.5"
   overlay_image: assets/images/Placeholder.jpg
