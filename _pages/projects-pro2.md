@@ -17,7 +17,7 @@ cards:
     text: "The tielset I used was a really useful asset downloaded from itch.io, however I designed the levels, character, jump blocks, cutscenes, animations, lighting and more by myself in order to tailor this asset to my needs. In my opinion it turned out looking really nice!"
 
   - title: "Programming"
-    image: /assets/images/Placeholder.jpg
+    image: /assets/images/JG3.png
     text: "There are a lot of scripts being used to make this demo work. The main systems are really the random spawning jump blocks, gamepad input detection, scene loading, transition and cutscene management, particle spawning and quite a bit more. This was definitely a techncal challenge as it was one of the first times expreimenting with gamepad inputs in Unity!"
 ---
 
