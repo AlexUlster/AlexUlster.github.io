@@ -9,15 +9,15 @@ sidebar:
 
 cards:
   - title: "Gas Mask"
-    image: /assets/images/PP1.png
+    image: /assets/images/GM1.png
     text: "This gas mask was my first time trying to model a 'helmet looking' object and first time using transparent materials in substance painter."
 
   - title: "Waste Barrel"
-    image: /assets/images/Placeholder.jpg
+    image: /assets/images/WB1.png
     text: "A waste barrel."
 
   - title: "Ammo Box"
-    image: /assets/images/Placeholder.jpg
+    image: /assets/images/AB1.png
     text: "A simple ammo box."
 ---
 
