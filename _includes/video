@@ -10,7 +10,7 @@
     width: 100%;
     aspect-ratio: 16 / 9;
     border: none;
-    border-radius: 14px;
+    border-radius: 0px;
   }
 
   @media (max-width: 768px) {
