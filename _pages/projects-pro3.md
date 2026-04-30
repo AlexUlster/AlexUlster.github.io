@@ -35,7 +35,7 @@ cards:
 
 <div class="project-scale">
 
-Project 1: Apocalyptic 3D Models
+Project 3: Apocalyptic 3D Models
 
 <div style="height: 20px;"></div>
 
