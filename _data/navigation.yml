@@ -12,6 +12,8 @@ main:
         url: /projects/projects-pro2/
       - title: "Project 3"
         url: /projects/projects-pro3/
+      - title: "Project 4"
+        url: /projects/projects-pro4/
         
   - title: "Skills"
     url: /skills/
@@ -27,3 +29,5 @@ projects:
     url: /projects/projects-pro2/
   - title: "Project 3"
     url: /projects/projects-pro3/
+  - title: "Project 4"
+    url: /projects/projects-pro4/
