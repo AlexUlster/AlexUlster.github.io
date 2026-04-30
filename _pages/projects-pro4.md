@@ -9,15 +9,15 @@ sidebar:
 
 cards:
   - title: "Customisation"
-    image: /assets/images/GM1.png
+    image: /assets/images/BB2.png
     text: "I added a small customisation system in the main menu that allowed player's to change their colour!"
 
   - title: "Unlockables"
-    image: /assets/images/WB1.png
+    image: /assets/images/BB3.png
     text: "Making progress and making money unlocked more items that the player could purchase at the terminal."
 
   - title: "Design"
-    image: /assets/images/AB1.png
+    image: /assets/images/BB4.png
     text: "The game is stylised and cartoony, I added two map areas, the 'Bean Farm' and the 'Warehouse' along with one enemy for the demo just to get a feel for how it would play out if a full scale version ever got     developed!"
 ---
 
