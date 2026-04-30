@@ -13,7 +13,7 @@ cards:
     text: "The main concept of the game is that the player needs to press the correct gamepad button to jump. This gets really challenging becuase the jump blocks are randomised and change on the fly, which puts the player's reaction time and coordination to the test! Additionally there are traps, spikes and pits scattered over the levels to add more challenge."
 
   - title: "Design"
-    image: /assets/images/Placeholder.jpg
+    image: /assets/images/JG2.png
     text: "The tielset I used was a really useful asset downloaded from itch.io, however I designed the levels, character, jump blocks, cutscenes, animations, lighting and more by myself in order to tailor this asset to my needs. In my opinion it turned out looking really nice!"
 
   - title: "Programming"
