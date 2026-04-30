@@ -25,7 +25,7 @@ Here’s a showreel of my work!
 
 <div style="max-width:900px; margin:auto;">
   <video autoplay muted loop playsinline 
-         style="width:100%; border-radius:16px; box-shadow:0 10px 40px rgba(0,0,0,0.3);">
+         style="width:100%; border-radius:0px; box-shadow:0 10px 40px rgba(0,0,0,0.3);">
     <source src="/assets/videos/showreel.mp4" type="video/mp4">
   </video>
 </div>
