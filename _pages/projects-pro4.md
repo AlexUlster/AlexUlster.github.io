@@ -8,17 +8,17 @@ sidebar:
     - projects
 
 cards:
-  - title: "Gas Mask"
+  - title: "Customisation"
     image: /assets/images/GM1.png
-    text: "This gas mask was my first time trying to model a 'helmet looking' object and first time using transparent materials in substance painter."
+    text: "I added a small customisation system in the main menu that allowed player's to change their colour!"
 
-  - title: "Waste Barrel"
+  - title: "Unlockables"
     image: /assets/images/WB1.png
-    text: "A waste barrel."
+    text: "Making progress and making money unlocked more items that the player could purchase at the terminal."
 
-  - title: "Ammo Box"
+  - title: "Design"
     image: /assets/images/AB1.png
-    text: "A simple ammo box."
+    text: "The game is stylised and cartoony, I added two map areas, the 'Bean Farm' and the 'Warehouse' along with one enemy for the demo just to get a feel for how it would play out if a full scale version ever got     developed!"
 ---
 
 <style>
@@ -43,7 +43,7 @@ Bean Business was a small extraction game demo I made at the NRC for an assignme
 
 <div style="height: 20px;"></div>
 
-{% include video id="qKcPhpC2mTw" %}
+{% include video id="2Zsx_jxE1vg" %}
 
 {% include project-cards.html cards=page.cards %}
 
