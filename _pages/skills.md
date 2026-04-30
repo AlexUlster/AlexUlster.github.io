@@ -2,13 +2,7 @@
 title: " "
 layout: splash
 permalink: /skills/
-header:
-  title: "SKILLS"
-  excerpt: " "
-  overlay_color: "#000"
-  overlay_filter: "0"
-  overlay_image: /assets/images/OG1.png
- 
+
 skills:
   - name: "Unity"
     icon: "fab fa-fw fa-unity"
