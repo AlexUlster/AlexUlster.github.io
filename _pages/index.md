@@ -22,3 +22,10 @@ Here’s a showreel of my work!
     <source src="/assets/videos/showreel.mp4" type="video/mp4">
   </video>
 </div>
+
+About Me:
+My name is Alex, I'm a Game designer and developer specialising in Unity. I have experience creating high quality 2D, 3D
+and VR games along with using a broad range of industry standard software. I’m confident with
+coding in C# along with being a very capable 3D modeler. My time at Ulster University has taught
+me how to collaborate and work well in teams while also taking my passion for game development
+to the next level.
